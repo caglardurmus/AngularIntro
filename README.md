@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Downloading And Installing Modules
 
-Run `ng install` for installing modules. It will download node modules files. 
+Run `npm install` for installing modules. It will download node modules files. 
 
 ## Development server
 
