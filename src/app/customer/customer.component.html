@@ -1,0 +1,17 @@
+<h1>Mevcut il {{city}}</h1>
+
+<ul>
+  <!-- For döngüsü örneği-->
+  <div *ngFor="let customer of customers">
+    <!-- if örneği-->
+    <li *ngIf="customer.age>18" (click)="selectCustomer(customer)">
+      {{customer.firstName}} {{customer.lastName}}
+    </li>
+  </div>
+</ul>
+
+<strong *ngIf="selectedCustomer; else elseBlock">{{selectedCustomer.firstName}} seçtiniz.</strong>
+
+<ng-template #elseBlock>
+  <h2>Birşey Seçmediniz!</h2>
+</ng-template>
